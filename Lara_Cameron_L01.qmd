@@ -1,8 +1,8 @@
 ---
 title: "L01 Review"
 subtitle: "Data Science 3 with R (STAT 301-3)"
-author: "YOUR NAME"
-pagetitle: "L01 YOUR NAME"
+author: "Cameron Lara"
+pagetitle: "L01 Cameron Lara"
 date: today
 
 format:
@@ -26,9 +26,7 @@ citation-location: margin
 ::: {.callout-tip icon="false"}
 ## Github Repo Link
 
-To link to your github **repo**sitory, appropriately edit the example link below. Meaning replace `https://your-github-repo-url` with your github repo url. Suggest verifying the link works before submitting.
-
-[https://your-github-repo-url](https://your-github-repo-url)
+[Cameron's L01 GitHub Repo](https://github.com/stat301-3-2026-spring/l01-review-camjlara41.git)
 :::
 
 ## Overview
@@ -45,9 +43,12 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
-
+1. data cleaning/eda
+2. initial setup (splitting, folding)
+3. building recipes (including a baseline recipe and tree versions for each additional recipe)
+4. fit models to resamples or tuning grids on training set
+5. analyze all model results and choose best model
+6. fit final model to testing set
 :::
 
 ### Question 2
@@ -56,9 +57,7 @@ Explain the difference between supervised and unsupervised learning.
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
-
+Supervised learning means that desired outcome variables are provided to the model. Unsupervised learning means that the model determines relationships in the data on its own.
 :::
 
 ### Question 3 
@@ -69,27 +68,21 @@ In general, we can classify a model by its purpose into 1 of the 3 categories be
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
-
+Describe characteristics and trends in the data.
 :::
 
 #### Inferential Models
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
-
+Create a model that answers a research question/hypothesis, such as a specific variable's importance in predicting for an outcome variable
 :::
 
 #### Predictive Models
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
-
+Create a model that yields the most accurate prediction on new data.
 :::
 
 ### Question 4 
@@ -102,9 +95,7 @@ What does it mean to be a mechanistic model?
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
-
+Mechanistic models utilize a predetermined equation in order to make a prediction.
 :::
 
 #### Part (b)
@@ -113,9 +104,7 @@ What does it mean to be an empirically driven model?
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
-
+Empirically driven models do not assume a known equation and instead make predictions based only on given data.
 :::
 
 #### Part (c)
@@ -124,9 +113,7 @@ How does the mechanistic and empirically driven model terminology relate to the 
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
-
+Mechanistic models are parametric and empirically driven models are nonparametric.
 :::
 
 #### Part (d)
@@ -135,9 +122,7 @@ In general, is a mechanistic or empirically driven model easier to interpret? Ex
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
-
+In general, a mechanistic model is easier to interpret because the form of the relationship between variables (or the equation) is already known.
 :::
 
 #### Part (e)
@@ -146,9 +131,7 @@ How does mechanistic and empirically driven model terminology relate to the idea
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
-
+Because the form of the relationship between variables in empirically driven models is determined by the given data, empirically driven models are generally more flexible.
 :::
 
 #### Part (f)
@@ -157,9 +140,7 @@ Describe the bias-variance trade-off when considering the use of a mechanistic o
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
-
+Because mechanistic models follow a known equation, they are generally less flexible and thus have less variance and are more biased. Meanwhile, empirically driven models tend to be more flexible and thus have greater variance and are less biased.
 :::
 
 ### Question 5 
@@ -168,9 +149,7 @@ Explain the difference between a regression and classification machine learning 
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
-
+Regression ML problems aim to predict a value of a continuous outcome variable while classification ML problems aim to predict a class of a discrete outcome variable.
 :::
 
 ### Question 6 
@@ -179,9 +158,7 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
-
+It is useful to stratify by the outcome variable when splitting the data because it ensures that the distribution of the outcome variable is consistent from the full data set to the training and testing sets.
 :::
 
 ### Question 7 
@@ -190,8 +167,6 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
 
 :::
 
@@ -202,8 +177,6 @@ When might we use a bootstrap resampling procedure instead of v-fold cross valid
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
 :::
 
 ### Question 9 
@@ -212,8 +185,6 @@ Briefly describe model tuning and why we use it.
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
 
 :::
 
@@ -224,8 +195,6 @@ What are two common performance metrics when dealing with a regression ML proble
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
 :::
 
 What are two common performance metrics when dealing with a classification ML problem?
@@ -233,23 +202,19 @@ What are two common performance metrics when dealing with a classification ML pr
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
 :::
 
 ### Question 11
 
 Classify each question/problem below as either prediction or inferential. Explain your reasoning for each.
 
-A company with a subscription based service (for example Netflix, Disney+, New York Times, etc) has data concerning customer interactions with a them, including features like the number of customer service calls, quality of service calls, subscription length, engagement with the service, discounted service, etc. They are interested in two questions:
+A company with a subscription based service (for example Netflix, Disney+, New York Times, etc) has data concerning customer interactions with them, including features like the number of customer service calls, quality of service calls, subscription length, engagement with the service, discounted service, etc. They are interested in two questions:
 
 1. Does a high number of service calls impact a customer's likelihood of churn in the next month (leave the company/drop the service)?
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
-
+This is an inferential question because it aims to determine whether a certain predictor variable (number of service calls) is relevant in predicting the 
 :::
 
 2. How likely is it that a customer will churn in the next month (leave the company/drop the service)?
@@ -260,4 +225,3 @@ YOUR SOLUTION HERE
 YOUR SOLUTION HERE
 
 :::
-
