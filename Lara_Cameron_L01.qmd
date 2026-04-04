@@ -167,7 +167,7 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
+V-fold cross validation splits the training set into a certain number of subsets (V), fitting and training the model on all but one of those subsets, which is used as the "testing"/evaluation set. Each subset is used as the evaluation set once, and the process can be repeated a certain number of times (repeats). An evaluation metric is obtained for each subset and repeat, and these metrics are averaged to produce a single metric. This allows us to gauge the initial efficacy of each model without yet evaluating them on the final testing set, which would lead to data leakage.
 :::
 
 ### Question 8
@@ -185,7 +185,7 @@ Briefly describe model tuning and why we use it.
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
+Model tuning is the process of adjusting the hyperparameter ranges of a model. We use model tuning because it allows us to create models better suited for prediction accuracy in a given dataset. Combining tuning and resampling allows us to tune hyperparameters dynamically depending on their performance (refinement).
 :::
 
 ### Question 10 
@@ -194,14 +194,14 @@ What are two common performance metrics when dealing with a regression ML proble
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
+Two common performance metric for regression ML problems are RMSE and MAE.
 :::
 
 What are two common performance metrics when dealing with a classification ML problem?
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
+Two common performance metrics for classification ML problems are accuracy and ROC-AUC.
 :::
 
 ### Question 11
@@ -214,14 +214,12 @@ A company with a subscription based service (for example Netflix, Disney+, New Y
 
 ::: {.callout-tip icon="false"}
 ## Solution
-This is an inferential question because it aims to determine whether a certain predictor variable (number of service calls) is relevant in predicting the 
+This is an inferential question because it asks a research question, aiming to determine whether a certain predictor variable (number of service calls) is relevant in predicting the likelihood of a customer dropping the service.
 :::
 
 2. How likely is it that a customer will churn in the next month (leave the company/drop the service)?
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
-
+This is a prediction question because it aims to yield the most accurate prediction of whether a customer will drop the service as possible.
 :::
