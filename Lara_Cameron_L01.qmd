@@ -33,10 +33,6 @@ citation-location: margin
 
 The goal of this lab is to review machine learning/predictive modeling vocabulary and concepts covered in Data Science 2 with R (STAT 301-2).
 
-## Questions
-
-When completing the following questions ensure your solutions are neatly formatted and clearly indicated. Consider including diagrams/images in some of your solutions, if it helps to make things easier to describe/discuss.
-
 ### Question 1
 
 Provide a brief outline/overview of the steps involved in a supervised machine learning process. Could provide this as a bulleted list. 
@@ -176,7 +172,7 @@ When might we use a bootstrap resampling procedure instead of v-fold cross valid
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
+You might use bootstrap resampling in cases where you have a very small number of observations and splitting the data into subsets is not feasible. This is because bootstrap resampling takes individual samples of the training set with replacement for each additional resample.
 :::
 
 ### Question 9 
@@ -185,7 +181,7 @@ Briefly describe model tuning and why we use it.
 
 ::: {.callout-tip icon="false"}
 ## Solution
-Model tuning is the process of adjusting the hyperparameter ranges of a model. We use model tuning because it allows us to create models better suited for prediction accuracy in a given dataset. Combining tuning and resampling allows us to tune hyperparameters dynamically depending on their performance (refinement).
+Model tuning is the process of adjusting the hyperparameter ranges of a model. We use model tuning because it allows us to create models better suited for prediction accuracy in a given dataset. Hyperparameters can be refined by analyzing the best hyperparameters in prior prediction results.
 :::
 
 ### Question 10 
