@@ -53,19 +53,22 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 ### Self Evaluation
 
 ::: {.callout-important icon="false"}
-
 ## Score
-
+3
 
 ## Explanation
 
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
+I gave myself a 3 because I was mostly correct, but I missed a few steps like tuning the models. I also made a major error by saying that we'd fit the final model to the testing set, which is false. I think this misunderstanding occurred because the final model is the only one to be evaluated on the testing set, so I misinterpreted it as being fit to the testing set instead of the training set.
 
 ## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
-
+1. data cleaning/eda
+2. initial setup (splitting, folding)
+3. building recipes (including a baseline recipe and tree versions for each additional recipe)
+4. tune models
+5. fit models to resamples or tuning grids on training set
+6. analyze all model results and choose best model
+7. fit final model to training set
+8. analyze final model on testing set
 :::
 
 ### Question 2
@@ -80,19 +83,11 @@ Supervised learning means that desired outcome variables are provided to the mod
 ### Self Evaluation
 
 ::: {.callout-important icon="false"}
-
 ## Score 
-
+4
 
 ## Explanation
-
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
-
-## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
-
+I gave myself a 4 because I didn't provide the goal of supervised learning, but my answer was otherwise correct.
 :::
 
 ### Question 3 
@@ -106,47 +101,11 @@ In general, we can classify a model by its purpose into 1 of the 3 categories be
 Describe characteristics and trends in the data.
 :::
 
-#### Self Evaluation
-
-::: {.callout-important icon="false"}
-
-## Score 
-
-
-## Explanation
-
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
-
-## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
-
-:::
-
 #### Inferential Models
 
 ::: {.callout-tip icon="false"}
 ## Solution
 Create a model that answers a research question/hypothesis, such as a specific variable's importance in predicting for an outcome variable
-:::
-
-#### Self Evaluation
-
-::: {.callout-important icon="false"}
-
-## Score 
-
-
-## Explanation
-
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
-
-## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
-
 :::
 
 #### Predictive Models
@@ -159,19 +118,11 @@ Create a model that yields the most accurate prediction on new data.
 #### Self Evaluation
 
 ::: {.callout-important icon="false"}
-
-## Score 
-
+## Score
+5
 
 ## Explanation
-
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
-
-## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
-
+I gave myself a 5 because I correctly answered the goals of each model category.
 :::
 
 ### Question 4 
@@ -187,24 +138,6 @@ What does it mean to be a mechanistic model?
 Mechanistic models utilize a predetermined equation in order to make a prediction.
 :::
 
-#### Self Evaluation
-
-::: {.callout-important icon="false"}
-
-## Score 
-
-
-## Explanation
-
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
-
-## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
-
-:::
-
 #### Part (b)
 
 What does it mean to be an empirically driven model?
@@ -212,24 +145,6 @@ What does it mean to be an empirically driven model?
 ::: {.callout-tip icon="false"}
 ## Solution
 Empirically driven models do not assume a known equation and instead make predictions based only on given data.
-:::
-
-#### Self Evaluation
-
-::: {.callout-important icon="false"}
-
-## Score 
-
-
-## Explanation
-
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
-
-## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
-
 :::
 
 #### Part (c)
@@ -241,24 +156,6 @@ How does the mechanistic and empirically driven model terminology relate to the 
 Mechanistic models are parametric and empirically driven models are nonparametric.
 :::
 
-#### Self Evaluation
-
-::: {.callout-important icon="false"}
-
-## Score 
-
-
-## Explanation
-
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
-
-## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
-
-:::
-
 #### Part (d)
 
 In general, is a mechanistic or empirically driven model easier to interpret? Explain.
@@ -266,24 +163,6 @@ In general, is a mechanistic or empirically driven model easier to interpret? Ex
 ::: {.callout-tip icon="false"}
 ## Solution
 In general, a mechanistic model is easier to interpret because the form of the relationship between variables (or the equation) is already known.
-:::
-
-#### Self Evaluation
-
-::: {.callout-important icon="false"}
-
-## Score 
-
-
-## Explanation
-
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
-
-## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
-
 :::
 
 #### Part (e)
@@ -297,22 +176,6 @@ Because the form of the relationship between variables in empirically driven mod
 
 #### Self Evaluation
 
-::: {.callout-important icon="false"}
-
-## Score 
-
-
-## Explanation
-
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
-
-## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
-
-:::
-
 #### Part (f)
 
 Describe the bias-variance trade-off when considering the use of a mechanistic or empirically driven model. 
@@ -325,19 +188,11 @@ Because mechanistic models follow a known equation, they are generally less flex
 #### Self Evaluation
 
 ::: {.callout-important icon="false"}
-
 ## Score 
-
+5
 
 ## Explanation
-
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
-
-## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
-
+I gave myself a 5 because though I missed some of the more minute details included in the solution responses, I feel like I answered the questions posed in each part correctly.
 :::
 
 ### Question 5 
@@ -352,19 +207,11 @@ Regression ML problems aim to predict a value of a continuous outcome variable w
 ### Self Evaluation
 
 ::: {.callout-important icon="false"}
-
 ## Score 
-
+5
 
 ## Explanation
-
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
-
-## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
-
+I gave myself a 5 because I answered the question fully/correctly.
 :::
 
 ### Question 6 
@@ -379,19 +226,11 @@ It is useful to stratify by the outcome variable when splitting the data because
 ### Self Evaluation
 
 ::: {.callout-important icon="false"}
-
 ## Score 
-
+4
 
 ## Explanation
-
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
-
-## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
-
+I gave myself a 4 because I answered the question mostly correct but didn't include why keeping the distribution consistent is important for the model performance. I think that this aspect was something I had not looked deeper into prior to this assignment.
 :::
 
 ### Question 7 
@@ -406,19 +245,11 @@ V-fold cross validation splits the training set into a certain number of subsets
 ### Self Evaluation
 
 ::: {.callout-important icon="false"}
-
 ## Score 
-
+4
 
 ## Explanation
-
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
-
-## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
-
+I gave myself a 4 because I explained the process of v-fold cross validation correctly, but I didn't include the point that v-fold cross validation allows gauging the models' efficacy on new/unseen data. I think that this was something I knew but didn't think to specify—however, it is an important clarification.
 :::
 
 ### Question 8
@@ -433,19 +264,11 @@ You might use bootstrap resampling in cases where you have a very small number o
 ### Self Evaluation
 
 ::: {.callout-important icon="false"}
-
-## Score 
-
+## Score
+4
 
 ## Explanation
-
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
-
-## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
-
+I'm giving myself a 4 because I feel like I explained the second part of the solution key more in depth, and this is sufficient for the question "When might we use...". However, I think answering the part about ensuring low variance would have yielded a more complete answer. I think I missed this part because since we haven't used it in class much, I am generally unfamiliar with bootstrapping.
 :::
 
 ### Question 9 
@@ -460,19 +283,11 @@ Model tuning is the process of adjusting the hyperparameter ranges of a model. W
 ### Self Evaluation
 
 ::: {.callout-important icon="false"}
-
 ## Score 
-
+5
 
 ## Explanation
-
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
-
-## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
-
+I gave myself a 5 because though I didn't explain the definition of hyperparameters as in-depth, I feel I answered the question in its completion.
 :::
 
 ### Question 10 
@@ -482,24 +297,6 @@ What are two common performance metrics when dealing with a regression ML proble
 ::: {.callout-tip icon="false"}
 ## Solution
 Two common performance metric for regression ML problems are RMSE and MAE.
-:::
-
-### Self Evaluation
-
-::: {.callout-important icon="false"}
-
-## Score 
-
-
-## Explanation
-
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
-
-## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
-
 :::
 
 What are two common performance metrics when dealing with a classification ML problem?
@@ -512,19 +309,11 @@ Two common performance metrics for classification ML problems are accuracy and R
 ### Self Evaluation
 
 ::: {.callout-important icon="false"}
-
 ## Score 
-
+5
 
 ## Explanation
-
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
-
-## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
-
+I gave myself a 5 because I answered with two correct performance metrics for each part of the question.
 :::
 
 ### Question 11
@@ -540,24 +329,6 @@ A company with a subscription based service (for example Netflix, Disney+, New Y
 This is an inferential question because it asks a research question, aiming to determine whether a certain predictor variable (number of service calls) is relevant in predicting the likelihood of a customer dropping the service.
 :::
 
-### Self Evaluation
-
-::: {.callout-important icon="false"}
-
-## Score 
-
-
-## Explanation
-
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
-
-## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
-
-:::
-
 2. How likely is it that a customer will churn in the next month (leave the company/drop the service)?
 
 ::: {.callout-tip icon="false"}
@@ -568,17 +339,9 @@ This is a prediction question because it aims to yield the most accurate predict
 ### Self Evaluation
 
 ::: {.callout-important icon="false"}
-
 ## Score 
-
+5
 
 ## Explanation
-
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
-
-## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
-
+I gave myself a 5 because I answered each part of the question correctly.
 :::
